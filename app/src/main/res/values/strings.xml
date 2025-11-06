@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BlockApps</string>
+    <string name="remove">Удалить</string>
+    <string name="add_timer">Добавить таймер</string>
+    <string name="no_active_timers">Нет активных таймеров\n\nНажмите кнопку выше чтобы добавить</string>
+    <string name="select_app">Выберите приложение</string>
+    <string name="search_apps">Поиск приложений...</string>
+</resources>

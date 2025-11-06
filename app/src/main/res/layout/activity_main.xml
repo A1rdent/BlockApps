@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BlockApps - Контроль времени"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка настройки пароля -->
+    <Button
+        android:id="@+id/btn_setup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Настройка пароля"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white" />
+
+    <!-- Кнопка добавления таймера -->
+    <Button
+        android:id="@+id/btn_add_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ Добавить таймер"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white" />
+
+    <!-- Сообщение если нет таймеров -->
+    <TextView
+        android:id="@+id/tv_empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Нет активных таймеров\n\nНажмите кнопку выше чтобы добавить"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="32dp"
+        android:textColor="#666" />
+
+    <!-- Список активных таймеров -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_timers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+</LinearLayout>
